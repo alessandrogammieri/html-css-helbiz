@@ -5,10 +5,19 @@
   box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap');
+
+body {
+  font-size: 21px;
+}
+
 header {
-  background-color: black;
-  height: 74px;
+  background-color: #ffffff;
+  height: 67px;
   width: 100%;
+  position: fixed;
+  z-index: 999;
+  border-bottom: solid 1px #000000;
 }
 
 section {
@@ -24,6 +33,7 @@ footer {
   width: 100%;
 }
 
+/* Regole per centratura con larghezza del 75% */
 .container {
   background-color: green;
   height: 200px;
@@ -31,44 +41,75 @@ footer {
   margin: 0 auto;
 }
 
-.box-center {
-  background-color: yellow;
+/* Regole per centratura con larghezza del 60% */
+.box {
   height: 50px;
   width: 60%;
   margin: 0 auto;
+  border: solid 1px white;
 }
 
+/* Regole della riga per il posizionamento del float */
 .row::after {
   content: "";
   display: table;
   clear: both;
 }
 
+/* Regole delle colonne */
 .col {
   float: left;
   width: 48%;
   height: 100px;
   border: solid 1px black;
 }
-
 .row .col:first-child {
   margin-right: 4%;
 }
-
 .coldx {
   float: right;
   width: 48%;
   height: 100px;
   border: solid 1px black;
 }
-
 .colfour {
   float: left;
   width: 25%;
   height: 50px;
-  border: solid 1px black;
+  border: solid 1px white;
 }
 
 /* --------------------------------------------------------------------------------------------------------- */
 
 /* REGOLE SPECIFICHE */
+
+/* Regole dell'Header -----------------------*/
+
+/* Barra di navigazione */
+nav ul {
+  list-style: none;
+}
+nav li{
+  display: inline-block;
+  padding: 0 10px 2px 2px;
+}
+nav a {
+  text-decoration: none;
+  color: #000000;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.55em;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+/* Centratura del logo e del menu */
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* Line che divide il Menu delle lingue */
+.lang-divider {
+  border-right: 1px solid #ccc;
+  padding-left: 5px;
+}
