@@ -1,5 +1,74 @@
+/* REGOLE GENERALI */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+header {
+  background-color: black;
+  height: 74px;
+  width: 100%;
+}
+
+section {
+  background-color: red;
+  height: 300px;
+  width: 100%;
+  border: solid 1px black;
+}
+
+footer {
+  background-color: black;
+  height: 500px;
+  width: 100%;
+}
+
+.container {
+  background-color: green;
+  height: 200px;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.box-center {
+  background-color: yellow;
+  height: 50px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col {
+  float: left;
+  width: 48%;
+  height: 100px;
+  border: solid 1px black;
+}
+
+.row .col:first-child {
+  margin-right: 4%;
+}
+
+.coldx {
+  float: right;
+  width: 48%;
+  height: 100px;
+  border: solid 1px black;
+}
+
+.colfour {
+  float: left;
+  width: 25%;
+  height: 50px;
+  border: solid 1px black;
+}
+
+/* --------------------------------------------------------------------------------------------------------- */
+
+/* REGOLE SPECIFICHE */
