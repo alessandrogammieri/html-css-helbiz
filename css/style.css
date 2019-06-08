@@ -22,10 +22,8 @@ header {
 }
 
 section {
-  background-color: red;
-  height: 300px;
+  position: relative;
   width: 100%;
-  border: solid 1px black;
 }
 
 footer {
@@ -34,10 +32,17 @@ footer {
   padding: 100px 0 60px 0;
 }
 
+h1 {
+  color: #ffffff;
+  font-size: 2.2em;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding-bottom: 10px;
+  text-shadow: 0.5px 0.5px #000000;
+}
+
 /* Regole per centratura con larghezza del 75% */
 .container {
-  background-color: green;
-  height: 200px;
   width: 75%;
   margin: 0 auto;
 }
@@ -59,8 +64,7 @@ footer {
 .col {
   float: left;
   width: 48%;
-  height: 100px;
-  border: solid 1px black;
+  padding: 50px 0;
 }
 .row .col:first-child {
   margin-right: 4%;
@@ -68,8 +72,8 @@ footer {
 .coldx {
   float: right;
   width: 48%;
-  height: 100px;
-  border: solid 1px black;
+  text-align: center;
+  padding: 100px 0;
 }
 .colfour {
   float: left;
@@ -101,7 +105,6 @@ nav a {
 /* Centratura del logo e del menu */
 .center {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   padding: 18px 0;
 }
@@ -109,6 +112,107 @@ nav a {
 .lang-divider {
   border-right: 1px solid #ccc;
   padding-left: 5px;
+}
+
+/* Regole del Immagine di copertina -----------------------*/
+.cover {
+  background-image: url("https://helbiz.com/asset/pages/newhome/images/hero-bg.jpg");
+  background-size: cover;
+  height: 554px;
+  margin-bottom: 100px;
+}
+.center-cover {
+  padding: 220px 0;
+  text-align: center;
+}
+.text {
+  color: #ffffff;
+  font-size: .7em;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+/* Regole della sezione a 2 colonne -----------------------*/
+.content-center {
+  text-align: center;
+  background-color: #fafafa;
+}
+h4 {
+  color: #000000;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  padding: 20px 0;
+}
+
+/* Regole della sezione Banner + smartphone -----------------------*/
+.banner {
+  background-image: url("https://helbiz.com/asset/pages/newhome/images/HelbizBanner.jpg");
+  background-size: cover;
+  height: 554px;
+  margin-top: 80px;
+  position: relative;
+}
+.phone {
+  position: absolute;
+  top: 160px;
+  left: 50%;
+  transform: translate(-50%);
+  max-height: 630px;
+  z-index: 16;
+}
+.pos-hbanner {
+  padding: 80% 0 0 30%;
+}
+
+/* Regole della sezione Monopattino -----------------------*/
+.pattino {
+  background-image: url("https://helbiz.com/asset/pages/newhome/images/ScooterHelbiz-2400.jpg");
+  background-size: cover;
+  margin-top: 250px;
+}
+h3 {
+  color: #ffffff;
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 20px 0;
+}
+h5 {
+  color: #ffffff;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  padding: 20px 0;
+}
+
+/* Regole Sezione 4 a 2 colonne -----------------------*/
+.maps {
+  background-color: #41566a;
+  margin-top: 50px;
+  height: 600px;
+  text-align: center;
+  position: relative;
+  /* padding-top: 243px; */
+}
+.m-pos {
+  position: absolute;
+  bottom: 0;
+  transform: translate(-50%);
+}
+.city {
+  background-image: url("https://helbiz.com/asset/pages/newhome/images/Cities-1500.jpg");
+  background-size: cover;
+  margin-top: 50px;
+  height: 600px;
+}
+
+/* Regole Sezione Social Banner -----------------------*/
+.social-banner {
+  background-image: url("https://helbiz.com/asset/pages/newhome/images/Social-Banner.jpg");
+  background-size: cover;
+  margin: 50px 0;
+  height: 420px;
 }
 
 /* Regole del Footer -----------------------*/
