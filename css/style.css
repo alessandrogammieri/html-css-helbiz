@@ -150,6 +150,7 @@ h4 {
   background-image: url("https://helbiz.com/asset/pages/newhome/images/HelbizBanner.jpg");
   background-size: cover;
   height: 554px;
+  width: 100%;
   margin-top: 80px;
   position: relative;
 }
@@ -162,7 +163,7 @@ h4 {
   z-index: 16;
 }
 .pos-hbanner {
-  padding: 80% 0 0 30%;
+  padding: 535px 0 0 200px;
 }
 
 /* Regole della sezione Monopattino -----------------------*/
